@@ -1,5 +1,5 @@
-wwwroot\assets\index-CE4IZlHy.js
 wwwroot\assets\index-DnXFcu9S.css
+wwwroot\assets\index-Jg_U42xk.js
 wwwroot\favicon.svg
 wwwroot\icons.svg
 wwwroot\index.html

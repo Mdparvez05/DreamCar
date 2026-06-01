@@ -160,3 +160,4 @@ C:\Users\mdpar\Source\Repos\DreamCar\backend\obj\Debug\net8.0\backend.pdb
 C:\Users\mdpar\Source\Repos\DreamCar\backend\obj\Debug\net8.0\backend.genruntimeconfig.cache
 C:\Users\mdpar\Source\Repos\DreamCar\backend\obj\Debug\net8.0\ref\backend.dll
 C:\Users\mdpar\Source\Repos\DreamCar\backend\bin\Debug\net8.0\backend.staticwebassets.runtime.json
+C:\Users\mdpar\Source\Repos\DreamCar\backend\obj\Debug\net8.0\backend.sourcelink.json

@@ -9,8 +9,9 @@ function App() {
   const [searchParams, setSearchParams] = useState(null)
   const [apiResponse, setApiResponse] = useState(null)
   
-  // Update this with your actual backend API URL
-  const API_URL = 'https://localhost:7055/api/slider'
+  // Use the deployed backend URL when available, otherwise call the same origin API path.
+  // When you paste the build into backend wwwroot, /api/slider will resolve on the same host.
+  const API_URL = import.meta.env.VITE_API_URL || '/api/slider'
 
   const handleFindCar = () => {
     setCurrentPage('finder')
