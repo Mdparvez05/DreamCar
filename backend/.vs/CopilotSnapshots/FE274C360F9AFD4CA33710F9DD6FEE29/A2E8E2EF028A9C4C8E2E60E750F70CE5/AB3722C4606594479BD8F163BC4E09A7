@@ -1,0 +1,31 @@
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
+using System.Collections.Generic;
+using backend.Dtos;
+using backend.Services.Interfaces;
+
+namespace backend.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class HomeController : ControllerBase
+    {
+        private readonly IHomePageService _homePageService;
+
+        public HomeController(IHomePageService homePageService)
+        {
+            _homePageService = homePageService;
+        }
+
+        [HttpPost("slider/search")]
+        public async Task<ActionResult<List<SliderSearchResDto>>> SliderSearch([FromBody] SliderSearchRequestDto request)
+        {
+            if (request == null)
+                return BadRequest();
+
+            var result = await _homePageService.GetSliderSearchAsync(request);
+            return Ok(result);
+        }
+    }
+}

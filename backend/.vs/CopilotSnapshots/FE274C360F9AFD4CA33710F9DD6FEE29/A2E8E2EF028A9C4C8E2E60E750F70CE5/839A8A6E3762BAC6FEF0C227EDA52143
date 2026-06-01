@@ -1,0 +1,81 @@
+﻿using backend.Data;
+using backend.Services.Interfaces;
+using backend.Data;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
+namespace backend.Services.Implementations
+{
+    public class HomePageService : IHomePageService
+    {
+        private readonly DreamCarDbContext _context;
+        
+        public HomePageService(DreamCarDbContext context)
+        {
+            _context = context;
+        }
+        public async Task<List<backend.Models.Brand>> GetSliderResultAsync()
+        {
+            return await _context.Brands.Take(5).ToListAsync();
+        }
+
+        public async Task<List<Dtos.SliderSearchResDto>> GetSliderSearchAsync(Dtos.SliderSearchRequestDto request)
+        {
+            var query = _context.Variants
+                .Include(v => v.Model!).ThenInclude(m => m.Brand!)
+                .Include(v => v.Spec)
+                .Include(v => v.Reviews)
+                .Include(v => v.VariantCategories).ThenInclude(vc => vc.Category)
+                .AsQueryable();
+
+            // FuelType - supports comma separated values (OR)
+            if (!string.IsNullOrWhiteSpace(request.FuelType))
+            {
+                var fuelTypes = request.FuelType.Split(',', System.StringSplitOptions.RemoveEmptyEntries).Select(s => s.Trim()).ToList();
+                query = query.Where(v => v.Spec != null && fuelTypes.Contains(v.Spec.FuelType));
+            }
+
+            // BodyType - supports comma separated values (OR)
+            if (!string.IsNullOrWhiteSpace(request.BodyType))
+            {
+                var bodyTypes = request.BodyType.Split(',', System.StringSplitOptions.RemoveEmptyEntries).Select(s => s.Trim()).ToList();
+                query = query.Where(v => v.Spec != null && bodyTypes.Contains(v.Spec.BodyType));
+            }
+
+            // SeatingCapacity
+            if (request.SeatingCapacity > 0)
+            {
+                query = query.Where(v => v.Spec != null && v.Spec.SeatingCapacity == request.SeatingCapacity);
+            }
+
+            // CategoryId
+            if (request.CategoryId > 0)
+            {
+                query = query.Where(v => v.VariantCategories.Any(vc => vc.CategoryId == request.CategoryId));
+            }
+
+            // NOTE: Price field not present in model; ignoring Price filter here.
+
+            var variants = await query.AsNoTracking().ToListAsync();
+
+            var results = variants.Select(v => new Dtos.SliderSearchResDto
+            {
+                BrandId = v.Model?.Brand?.Id ?? 0,
+                BrandName = v.Model?.Brand?.Name ?? string.Empty,
+                VariantId = v.Id,
+                VariantName = v.Name,
+                ReleasedDate = v.ReleasedDate,
+                Mileage = v.Spec != null ? (decimal?)v.Spec.Mileage : null,
+                TopSpeed = v.TopSpeed,
+                FuelType = v.Spec?.FuelType,
+                BodyType = v.Spec?.BodyType,
+                ReviewRatings = v.Reviews?.Select(r => r.Rating).ToList() ?? new List<int>(),
+                AverageRating = v.Reviews != null && v.Reviews.Any() ? (decimal?)v.Reviews.Average(r => r.Rating) : null
+            }).ToList();
+
+            return results;
+        }
+        
+    }
+}

@@ -1,0 +1,154 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "backend",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/slider": {
+      "post": {
+        "tags": [
+          "Home"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SliderSearchRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SliderSearchRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SliderSearchRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SliderSearchResDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SliderSearchResDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SliderSearchResDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "SliderSearchRequestDto": {
+        "type": "object",
+        "properties": {
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "fuelType": {
+            "type": "string",
+            "nullable": true
+          },
+          "seatingCapacity": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "bodyType": {
+            "type": "string",
+            "nullable": true
+          },
+          "categoryId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SliderSearchResDto": {
+        "type": "object",
+        "properties": {
+          "brandId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "brandName": {
+            "type": "string",
+            "nullable": true
+          },
+          "variantId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "variantName": {
+            "type": "string",
+            "nullable": true
+          },
+          "releasedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "mileage": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "topSpeed": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "fuelType": {
+            "type": "string",
+            "nullable": true
+          },
+          "bodyType": {
+            "type": "string",
+            "nullable": true
+          },
+          "reviewRatings": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          },
+          "averageRating": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

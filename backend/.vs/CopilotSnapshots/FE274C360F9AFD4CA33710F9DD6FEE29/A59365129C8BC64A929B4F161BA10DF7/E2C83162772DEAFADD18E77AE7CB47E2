@@ -1,0 +1,19 @@
+﻿using backend.Data;
+using backend.Services.Interfaces;
+
+namespace backend.Services.Implementations
+{
+    public class HomePageService : IHomePageService
+    {
+        private readonly DreamCarDbContext _context;
+        
+        public HomePageService(DreamCarDbContext context)
+        {
+            _context = context;
+        }
+
+
+
+        
+    }
+}

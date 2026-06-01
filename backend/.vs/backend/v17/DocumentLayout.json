@@ -1,0 +1,398 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|c:\\users\\mdpar\\source\\repos\\dreamcar\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|c:\\users\\mdpar\\source\\repos\\dreamcar\\backend\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|c:\\users\\mdpar\\source\\repos\\dreamcar\\backend\\services\\implementations\\homepageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|solutionrelative:services\\implementations\\homepageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|c:\\users\\mdpar\\source\\repos\\dreamcar\\backend\\data\\dreamcardbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|solutionrelative:data\\dreamcardbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|c:\\users\\mdpar\\source\\repos\\dreamcar\\backend\\models\\spec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|solutionrelative:models\\spec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|c:\\users\\mdpar\\source\\repos\\dreamcar\\backend\\models\\variantresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|solutionrelative:models\\variantresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|c:\\users\\mdpar\\source\\repos\\dreamcar\\backend\\models\\variantfeatures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|solutionrelative:models\\variantfeatures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|c:\\users\\mdpar\\source\\repos\\dreamcar\\backend\\models\\variantcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|solutionrelative:models\\variantcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|c:\\users\\mdpar\\source\\repos\\dreamcar\\backend\\models\\variantcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|solutionrelative:models\\variantcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|c:\\users\\mdpar\\source\\repos\\dreamcar\\backend\\models\\variant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|solutionrelative:models\\variant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|c:\\users\\mdpar\\source\\repos\\dreamcar\\backend\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|solutionrelative:models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|c:\\users\\mdpar\\source\\repos\\dreamcar\\backend\\models\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|solutionrelative:models\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|c:\\users\\mdpar\\source\\repos\\dreamcar\\backend\\models\\feature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|solutionrelative:models\\feature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|c:\\users\\mdpar\\source\\repos\\dreamcar\\backend\\models\\color.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|solutionrelative:models\\color.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|c:\\users\\mdpar\\source\\repos\\dreamcar\\backend\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|c:\\users\\mdpar\\source\\repos\\dreamcar\\backend\\models\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|solutionrelative:models\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Migrations\\20260601081445_IntialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260601081445_IntialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|c:\\users\\mdpar\\source\\repos\\dreamcar\\backend\\services\\interfaces\\ihomepageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|solutionrelative:services\\interfaces\\ihomepageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|c:\\users\\mdpar\\source\\repos\\dreamcar\\backend\\dtos\\slidersearchresdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|solutionrelative:dtos\\slidersearchresdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|c:\\users\\mdpar\\source\\repos\\dreamcar\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|c:\\users\\mdpar\\source\\repos\\dreamcar\\backend\\dtos\\slidersearchrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|solutionrelative:dtos\\slidersearchrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|c:\\users\\mdpar\\source\\repos\\dreamcar\\backend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{37057BD7-D550-4EFC-A4FD-EA2206EE336E}|backend.csproj|solutionrelative:backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 231,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Review.cs",
+              "DocumentMoniker": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Models\\Review.cs",
+              "RelativeDocumentMoniker": "Models\\Review.cs",
+              "ToolTip": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Models\\Review.cs",
+              "RelativeToolTip": "Models\\Review.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T07:17:30.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomePageService.cs",
+              "DocumentMoniker": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Services\\Implementations\\HomePageService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\HomePageService.cs",
+              "ToolTip": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Services\\Implementations\\HomePageService.cs",
+              "RelativeToolTip": "Services\\Implementations\\HomePageService.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAuwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T07:26:18.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Spec.cs",
+              "DocumentMoniker": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Models\\Spec.cs",
+              "RelativeDocumentMoniker": "Models\\Spec.cs",
+              "ToolTip": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Models\\Spec.cs",
+              "RelativeToolTip": "Models\\Spec.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA0wBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T07:17:15.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DreamCarDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Data\\DreamCarDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\DreamCarDbContext.cs",
+              "ToolTip": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Data\\DreamCarDbContext.cs",
+              "RelativeToolTip": "Data\\DreamCarDbContext.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAwwD4AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T07:13:16.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T08:16:32.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T07:24:24.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VariantResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Models\\VariantResponseDto.cs",
+              "RelativeDocumentMoniker": "Models\\VariantResponseDto.cs",
+              "ToolTip": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Models\\VariantResponseDto.cs",
+              "RelativeToolTip": "Models\\VariantResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T08:01:44.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VariantFeatures.cs",
+              "DocumentMoniker": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Models\\VariantFeatures.cs",
+              "RelativeDocumentMoniker": "Models\\VariantFeatures.cs",
+              "ToolTip": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Models\\VariantFeatures.cs",
+              "RelativeToolTip": "Models\\VariantFeatures.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T07:39:02.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VariantColor.cs",
+              "DocumentMoniker": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Models\\VariantColor.cs",
+              "RelativeDocumentMoniker": "Models\\VariantColor.cs",
+              "ToolTip": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Models\\VariantColor.cs",
+              "RelativeToolTip": "Models\\VariantColor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T07:54:24.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "VariantCategory.cs",
+              "DocumentMoniker": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Models\\VariantCategory.cs",
+              "RelativeDocumentMoniker": "Models\\VariantCategory.cs",
+              "ToolTip": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Models\\VariantCategory.cs",
+              "RelativeToolTip": "Models\\VariantCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T07:47:06.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Variant.cs",
+              "DocumentMoniker": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Models\\Variant.cs",
+              "RelativeDocumentMoniker": "Models\\Variant.cs",
+              "ToolTip": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Models\\Variant.cs",
+              "RelativeToolTip": "Models\\Variant.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T07:16:54.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Model.cs",
+              "DocumentMoniker": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Models\\Model.cs",
+              "RelativeDocumentMoniker": "Models\\Model.cs",
+              "ToolTip": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Models\\Model.cs",
+              "RelativeToolTip": "Models\\Model.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T07:16:32.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Feature.cs",
+              "DocumentMoniker": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Models\\Feature.cs",
+              "RelativeDocumentMoniker": "Models\\Feature.cs",
+              "ToolTip": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Models\\Feature.cs",
+              "RelativeToolTip": "Models\\Feature.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T07:38:23.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Color.cs",
+              "DocumentMoniker": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Models\\Color.cs",
+              "RelativeDocumentMoniker": "Models\\Color.cs",
+              "ToolTip": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Models\\Color.cs",
+              "RelativeToolTip": "Models\\Color.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T07:53:41.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T07:46:09.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Brand.cs",
+              "DocumentMoniker": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Models\\Brand.cs",
+              "RelativeDocumentMoniker": "Models\\Brand.cs",
+              "ToolTip": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Models\\Brand.cs",
+              "RelativeToolTip": "Models\\Brand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T07:15:58.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SliderSearchResDto.cs",
+              "DocumentMoniker": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Dtos\\SliderSearchResDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\SliderSearchResDto.cs",
+              "ToolTip": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Dtos\\SliderSearchResDto.cs",
+              "RelativeToolTip": "Dtos\\SliderSearchResDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T07:43:20.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-01T08:08:23.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20260601081445_IntialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Migrations\\20260601081445_IntialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260601081445_IntialCreate.cs",
+              "ToolTip": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Migrations\\20260601081445_IntialCreate.cs",
+              "RelativeToolTip": "Migrations\\20260601081445_IntialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T08:14:46.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IHomePageService.cs",
+              "DocumentMoniker": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Services\\Interfaces\\IHomePageService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IHomePageService.cs",
+              "ToolTip": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Services\\Interfaces\\IHomePageService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IHomePageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T07:26:40.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "SliderSearchRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Dtos\\SliderSearchRequestDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\SliderSearchRequestDto.cs",
+              "ToolTip": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\Dtos\\SliderSearchRequestDto.cs",
+              "RelativeToolTip": "Dtos\\SliderSearchRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T07:32:46.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "backend",
+              "DocumentMoniker": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\backend.csproj",
+              "RelativeDocumentMoniker": "backend.csproj",
+              "ToolTip": "C:\\Users\\mdpar\\Source\\Repos\\DreamCar\\backend\\backend.csproj",
+              "RelativeToolTip": "backend.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-01T07:13:22.814Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+﻿namespace backend.Models
+{
+    public class Category
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public List<Variant> Variants { get; set; } = new List<Variant>();
+    }
+}

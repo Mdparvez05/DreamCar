@@ -1,0 +1,23 @@
+﻿using backend.Data;
+using backend.Services.Interfaces;
+using backend.Data;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
+namespace backend.Services.Implementations
+{
+    public class HomePageService : IHomePageService
+    {
+        private readonly DreamCarDbContext _context;
+        
+        public HomePageService(DreamCarDbContext context)
+        {
+            _context = context;
+        }
+
+
+
+        
+    }
+}

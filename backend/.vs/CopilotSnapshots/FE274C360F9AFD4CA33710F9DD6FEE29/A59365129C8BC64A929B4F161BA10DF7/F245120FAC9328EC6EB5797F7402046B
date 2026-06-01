@@ -1,0 +1,14 @@
+﻿namespace backend.Models
+{
+    public class Variant
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int ModelId { get; set; }
+        public Model Model { get; set; }
+        public Spec Spec { get; set; }
+        public List<Review> Reviews { get; set; } = new List<Review>();
+        public List<VariantFeatures> Features { get; set; } = new List<VariantFeatures>();  
+        public List<Category> Categories { get; set; } = new List<Category>();  
+    }
+}

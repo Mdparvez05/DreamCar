@@ -1,0 +1,119 @@
+﻿using Microsoft.EntityFrameworkCore;
+using backend.Models;
+namespace backend.Data
+{
+    using Microsoft.EntityFrameworkCore;
+
+    public class DreamCarDbContext : DbContext
+    {
+        public DreamCarDbContext(DbContextOptions<DreamCarDbContext> options) : base(options)
+        {
+        }
+
+        public DbSet<Brand> Brands { get; set; }
+        public DbSet<Model> Models { get; set; }
+        public DbSet<Variant> Variants { get; set; }
+        public DbSet<Spec> Specs { get; set; }
+        public DbSet<Review> Reviews { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Feature> Features { get; set; }
+        public DbSet<VariantFeatures> VariantFeatures { get; set; }
+        public DbSet<VariantCategory> VariantCategories { get; set; }
+        public DbSet<Color> Colors { get; set; }
+        public DbSet<VariantColor> VariantColors { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            // Brand
+            modelBuilder.Entity<Brand>(b =>
+            {
+                b.HasKey(x => x.Id);
+                b.Property(x => x.Name).IsRequired().HasMaxLength(100).HasColumnType("nvarchar(100)");
+                b.HasMany(x => x.Models).WithOne(x => x.Brand).HasForeignKey(x => x.BrandId).OnDelete(DeleteBehavior.Cascade);
+            });
+
+            // Category
+            modelBuilder.Entity<Category>(c =>
+            {
+                c.HasKey(x => x.Id);
+                c.Property(x => x.Name).IsRequired().HasMaxLength(100).HasColumnType("nvarchar(100)");
+            });
+
+            // Feature
+            modelBuilder.Entity<Feature>(f =>
+            {
+                f.HasKey(x => x.Id);
+                f.Property(x => x.Name).IsRequired().HasMaxLength(100).HasColumnType("nvarchar(100)");
+            });
+
+            // VariantFeatures (join)
+            modelBuilder.Entity<VariantFeatures>(vf =>
+            {
+                vf.HasKey(x => x.Id);
+                vf.HasOne(x => x.Variant).WithMany(x => x.VariantFeatures).HasForeignKey(x => x.VariantId).OnDelete(DeleteBehavior.Cascade);
+                vf.HasOne(x => x.Feature).WithMany(x => x.Variants).HasForeignKey(x => x.FeatureId).OnDelete(DeleteBehavior.Cascade);
+            });
+
+            // VariantCategory (join)
+            modelBuilder.Entity<VariantCategory>(vc =>
+            {
+                vc.HasKey(x => x.Id);
+                vc.HasOne(x => x.Variant).WithMany(x => x.VariantCategories).HasForeignKey(x => x.VariantId).OnDelete(DeleteBehavior.Cascade);
+                vc.HasOne(x => x.Category).WithMany(x => x.Variants).HasForeignKey(x => x.CategoryId).OnDelete(DeleteBehavior.Cascade);
+            });
+
+            // Color
+            modelBuilder.Entity<Color>(co =>
+            {
+                co.HasKey(x => x.Id);
+                co.Property(x => x.Name).IsRequired().HasMaxLength(50).HasColumnType("nvarchar(50)");
+                co.Property(x => x.HexCode).HasMaxLength(10).HasColumnType("nvarchar(10)");
+            });
+
+            // VariantColor (join)
+            modelBuilder.Entity<VariantColor>(vc =>
+            {
+                vc.HasKey(x => x.Id);
+                vc.HasOne(x => x.Variant).WithMany(x => x.VariantColors).HasForeignKey(x => x.VariantId).OnDelete(DeleteBehavior.Cascade);
+                vc.HasOne(x => x.Color).WithMany(x => x.Variants).HasForeignKey(x => x.ColorId).OnDelete(DeleteBehavior.Cascade);
+            });
+
+            // Model
+            modelBuilder.Entity<Model>(m =>
+            {
+                m.HasKey(x => x.Id);
+                m.Property(x => x.Name).IsRequired().HasMaxLength(100).HasColumnType("nvarchar(100)");
+                m.HasMany(x => x.Variants).WithOne(x => x.Model).HasForeignKey(x => x.ModelId).OnDelete(DeleteBehavior.Cascade);
+            });
+
+            // Variant
+            modelBuilder.Entity<Variant>(v =>
+            {
+                v.HasKey(x => x.Id);
+                v.Property(x => x.Name).IsRequired().HasMaxLength(100).HasColumnType("nvarchar(100)");
+                v.HasMany(x => x.Reviews).WithOne(x => x.Variant).HasForeignKey(x => x.VariantId).OnDelete(DeleteBehavior.Cascade);
+                v.HasOne(x => x.Spec).WithOne(x => x.Variant).HasForeignKey<Spec>(s => s.VariantId).OnDelete(DeleteBehavior.Cascade);
+            });
+
+            // Spec
+            modelBuilder.Entity<Spec>(s =>
+            {
+                s.HasKey(x => x.Id);
+                s.Property(x => x.Name).HasMaxLength(100).HasColumnType("nvarchar(100)");
+                s.Property(x => x.FuelType).HasMaxLength(50).HasColumnType("nvarchar(50)");
+                s.Property(x => x.Transmission).HasMaxLength(50).HasColumnType("nvarchar(50)");
+                s.Property(x => x.BodyType).HasMaxLength(50).HasColumnType("nvarchar(50)");
+                s.Property(x => x.Mileage).HasColumnType("decimal(8,2)");
+            });
+
+            // Review
+            modelBuilder.Entity<Review>(r =>
+            {
+                r.HasKey(x => x.Id);
+                r.Property(x => x.Content).HasColumnType("nvarchar(max)");
+                r.Property(x => x.Rating).IsRequired();
+                r.HasCheckConstraint("CK_Review_Rating_Range", "[Rating] >= 1 AND [Rating] <= 5");
+            });
+        }
+    }
+}

@@ -1,0 +1,12 @@
+﻿using Microsoft.EntityFrameworkCore;
+namespace backend.Data
+{
+    public class DreamCarDbContext : DbContext
+    {
+        public DreamCarDbContext(DbContextOptions<DreamCarDbContext> options) : base(options)
+        {
+            
+        }
+        
+    }
+}
