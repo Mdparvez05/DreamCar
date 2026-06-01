@@ -19,9 +19,9 @@ const STEPS = [
     title: "What's your budget?",
     description: "The most you'd want to spend. We'll allow a little stretch and flag anything over.",
     type: 'slider',
-    min: 15000,
-    max: 60000,
-    step: 1000,
+    min: 500000,
+    max: 10000000,
+    step: 100000,
   },
   {
     id: 'seats',
@@ -68,7 +68,7 @@ export default function CarFinder({ onClose, onSubmit, apiUrl }) {
   const [currentStep, setCurrentStep] = useState(0);
   const [formData, setFormData] = useState({
     categoryId: null,
-    price: 40000,
+    price: 2500000,
     seatingCapacity: null,
     bodyType: [],
     fuelType: null,
@@ -233,10 +233,10 @@ export default function CarFinder({ onClose, onSubmit, apiUrl }) {
 
           {step.type === 'slider' && (
             <div className="slider-container">
-              <div className="slider-value">${formData.price.toLocaleString()}</div>
+              <div className="slider-value">INR{formData.price.toLocaleString()}</div>
               <div className="slider-range">
-                <span>${step.min.toLocaleString()}</span>
-                <span>${step.max.toLocaleString()}</span>
+                <span>INR{step.min.toLocaleString()}</span>
+                <span>INR{step.max.toLocaleString()}</span>
               </div>
               <input
                 type="range"

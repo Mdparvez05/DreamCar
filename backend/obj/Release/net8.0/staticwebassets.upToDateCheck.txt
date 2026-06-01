@@ -1,0 +1,5 @@
+wwwroot\index.html
+wwwroot\assets\index-DnXFcu9S.css
+wwwroot\favicon.svg
+wwwroot\icons.svg
+wwwroot\assets\index-CVptDE2v.js
