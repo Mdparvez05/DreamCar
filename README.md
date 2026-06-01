@@ -39,10 +39,10 @@ The focus was on creating a maintainable and extensible architecture that can su
 
 Due to time constraints, I intentionally excluded:
 
-* User authentication and authorization
-* Admin dashboard
-* Car comparison feature
+* AI Enabled search . Text to query conversion.
+* Shortlist - Car comparison feature
 * Favorites / wishlist functionality
+* Email shortlisted cars with cc as sales team
 * Advanced caching
 * Search indexing
 * Image upload management
